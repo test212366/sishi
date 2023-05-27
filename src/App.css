@@ -1,38 +1,941 @@
-.App {
-  text-align: center;
+ .first__slider-roll {
+	margin-top: 60px;
+	position: relative;
+ }
+ .second__slider {
+	position: relative;
+ }
+ .container {
+	max-width: 1520px;
+	width: 100%;
+	margin: 0 auto;
+ }
+ .first__slider-slide {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	transition: .3s ease all;
+ 
+
+}
+.wrapper-slide {
+	position: relative;
+}
+ .overlay__first-slider {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 4px;
+	top: 0;
+	background-color: #00000067;
+	border-radius: 15px;
+	transition: .3s ease all;
+ }
+ .fist_slider-target .swiper-wrapper {
+	display: flex;
+	align-items: center;
+	min-height: 564px;
+ }
+ .first__slider-slide img {
+	max-width: 630px;
+	max-height: 440px ;
+	transition: .3s ease all;
+ }
+ .first__slider-slide.swiper-slide-active  .overlay__first-slider{
+	opacity: 0;
+ }
+ .first__slider-slide.swiper-slide-active img{
+	max-width: 990px;
+	max-height: 560px;
+ 
+ }
+ .buttonSlider {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 10;
+	left: 160px;
+ 
+ }
+ .buttonSlider svg path{
+	transition: .3s ease all;
+ }
+ .buttonSlider:hover svg path{
+	fill: rgb(255, 255, 255);
+ }
+ .swiper-slide-active .first__title-slider {
+	position: absolute;
+	left: 50px;
+	top: 90px;
+	font-size: 37px;
+	font-weight: 600;
+	line-height: 60px;
+	color: #fff;
+	transition: .3s ease all;
+
+ }
+ .swiper-slide-active .first__desc-slider {
+	position: absolute;
+	left: 50px;
+	top: 280px;
+	font-size: 22px;
+	transition: .3s ease all;
+
+	color: #c4c4c4;
+}
+.first__title-slider {
+	position: absolute;
+	left: 50px;
+	top: 40px;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 50px;
+	color: #b4b4b4;
+	transition: .3s ease all;
+
+ }
+ .navSlider-item {
+	width: 160px;
+	height: 3px;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 10px;
+	background-color: #969696;
+ }
+ 
+.first__desc-slider {
+	position: absolute;
+	
+	left: 50px;
+	top: 200px;
+	font-size: 15px;
+	transition: .3s ease all;
+
+	color: #818181;
+}
+.next-button {
+	left: unset !important;
+	right: 160px !important;
+}
+.nav__slider {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1050px;
+	margin: 40px auto 0 auto;
+}
+.activeDot {
+	background-color: black !important;
+}
+ /* /swiper-slide-active */
+ 
+ .grocery {
+	position: relative;
+	margin-top: 100px;
+ }
+ .grocery__title {
+	font-size: 30px;
+ 
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .grocery__title img {
+	margin-right: 20px;
+ }
+ .slide__grocery-item {
+	position: relative;
+	background-color: #F3DEC8;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.25);
+	max-width: 330px;
+	min-height: 430px;
+	margin: 0 20px 40px 20px;
+ 
+ }
+ .slide__grocery-item img {
+	border-radius: 20px 20px 0 0 ;
+	height: 270px;
+	width: 100%;
+	object-fit: cover;
+ }
+ .slide__grocery-title {
+	text-align: center;
+	font-size: 20px;
+	line-height: 25px;
+	color: #000;
+	font-weight: 500;
+	margin: 15px 0 10px 0;
+ }
+ .info__slide {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	padding: 0 25px;
+ }
+ .info__slide button {
+	background-color: #F3EBE0;
+	border: none;
+	padding: 15px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	color: #3A3A3A;
+	font-size: 12px;
+	height: 39px;
+	letter-spacing: 0.03em;
+	transition: .3s ease all;
+	cursor: pointer;
+ }
+ .info__slide button:hover { 
+	background-color: #dfd5c8;
+ }
+ .info__slide button svg {
+	margin-right: 10px;
+ }
+ .info__slide p{
+	font-size: 24px;
+	line-height: 29px;
+	color: #292929;
+	font-weight: 600;
+ }
+ .slide-gr {
+	transition: .3s ease all;
+	padding-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 460px;
+	overflow: hidden;
+ }
+ .grocery__button {
+	display: flex;
+	justify-content: center;
+ }
+ .grocery__button button {
+	margin-top: 20px;
+	font-size: 17px;
+	border: none;
+	background-color: transparent;
+	font-weight: 500;
+	margin-bottom: 150px;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: .3s ease all;
+ }
+ .grocery__button button:hover {
+	color: #616161fd;
+ }
+ .activeOp {
+	height: auto !important;
+ }
+
+
+ 
+.groceryTreeOne {
+	position: absolute;
+	left: 0;
+	top: -60px;
+	z-index: -1;
+}
+.groceryTreeTwo {
+	position: absolute;
+	right: 0;
+	z-index: -1;
+
+}
+.swiper-slide .overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 20px;
+	background: #00000048;
+}
+ 
+.swiper-slide.swiper-slide-prev .overlay {
+	opacity: 0 !important;
+	z-index: -100;
+}
+.swiper-slide.swiper-slide-active .overlay {
+	opacity: 0 !important;
+	z-index: -100;
+}
+.swiper-slide.swiper-slide-next .overlay {
+	opacity: 0 !important;
+	z-index: -100;
+}
+.slider__init {
+	padding-top: 10px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* HEADER */
 
-.App-link {
-  color: #61dafb;
-}
+.header__top {
+	height: 110px;
+	width: auto;
+	left: 0px;
+	top: 0px;
+	border-radius: 0px;
+	background-color: #FFFFFF;
+ }
+ 
+ .header__inner {
+	display: flex;
+	justify-content: space-around;
+ }
+ 
+ .header__phone {
+	margin: 22.5px 0px 0px 0px;
+	padding-left: 15px;
+	border: 0px;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.1em;
+	color: #000000;
+	transition: all 1s;
+	transform: scale(1.1);
+	width: 170px;
+	height: 50px;
+ }
+ 
+ .header__phone::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 16px;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	/* background: url("../img/phone.png") 0 0/cover no-repeat; */
+ }
+ 
+ .header__phone:hover {
+	transform: scale(1.2);
+	background-color: #F3E5CE;
+ }
+ 
+ .header__logo {
+	width: 240px;
+	height: 100px;
+	/* background: url("../img/logo.png") 0 0/100% 100%; */
+	transition: all 1s;
+	border-radius: 20px;
+	margin: 5px 0px;
+	position: absolute;
+	left: 40%;
+	display: flex;
+ }
+ 
+ .header__logo:hover {
+	background-color: #000;
+	border-radius: 20px;
+	transform: scale(1.05);
+ }
+ 
+ .header__btn {
+	margin: 22.5px 0px 0px;
+	border: 0px;
+	background-color: #FFFFFF;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	transform: scale(1.2);
+	line-height: 19px;
+	letter-spacing: 0.1em;
+	color: #000000;
+	/* Rectangle 51 */
+	width: 170px;
+	height: 50px;
+	border-radius: 20px;
+	transition: all 1s;
+ }
+ 
+ .header__btn:hover {
+	transform: scale(1.3);
+	background: #F3E5CE;
+ }
+ /* HEADER  CLOSE */
+ .inst {
+	display: block;
+	opacity: 0;
+	transition: all 1s;
+	align-self: center;
+	margin-left: 95px;
+	border-radius: 50%;
+ }
+ 
+ .inst__img {
+	height: 55px;
+	width: 60px;
+	border-radius: 50%;
+ }
+ 
+ .inst__title {
+	opacity: 0;
+	transition: all 1s;
+	margin-top: 5px;
+	margin-bottom: 7.5px;
+	color: #F3E5CE;
+ }
+ 
+ .header__logo:hover .inst {
+	opacity: 1;
+ }
+ .header__logo:hover .inst__title {
+	opacity: 1;
+ }
+ 
+ .footer {
+	height: 200px;
+	max-width: 2000px;
+	background-color: rgb(243, 235, 224);
+ }
+ 
+ .footer__item {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 35px;
+ }
+ 
+ .footer__inst:hover {
+	transform: scale(1.1);
+ }
+ 
+ .footer__inst {
+	display: inline-block;
+	transition: all 1s;
+ }
+ 
+ .footer__inst-img {
+	width: 60px;
+	height: 55px;
+	padding: 0px 15px;
+ }
+ 
+ .footer__title {
+	text-align: center;
+ }
+ 
+ .name {
+	padding-top: 45px;
+ }
+ 
+ .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(77, 69, 69, 0.8588235294);
+ }
+ 
+ .modal {
+	transition: all 1s;
+	background-color: #F3E5CE;
+	width: 400px;
+	height: 190px;
+ }
+ 
+ .modal__title {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 500;
+	margin-left: 15px;
+	margin-top: 15px;
+ }
+ 
+ .modal__close {
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+	display: inline-block;
+ }
+ 
+ .modal__info {
+	height: 50px;
+	margin: 35px 60px 0px;
+	border-radius: 20px;
+ }
+ 
+ .modal__info-1 {
+	border-radius: 20px;
+	border: 0px;
+	height: 45px;
+	width: 250px;
+ }
+ 
+ .modal__submit {
+	margin-left: 85px;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font-size: 18px;
+	padding: 7.5px 15px 5px;
+	background-color: #a89d8c;
+	color: #000000;
+	border-radius: 20px;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+ /* CLOSE */
+
+
+
+@media screen and (max-width: 1510px) {
+	.groceryTreeOne {
+		height: 300px;
+		top: -10px;
+	}
+	.groceryTreeTwo {
+		height: 400px;
+	}
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 800px;
+		max-height: 560px;
+	 
+	 }
+	 .fist_slider-target .swiper-wrapper {
+		min-height: 500px;
+	 }
+	 .first__slider-slide img {
+		max-width: 530px;
+		max-height: 400px ;
+		 
+	 }
+	 .swiper-slide-active .first__title-slider {
+		font-size: 28px;
+		line-height: 45px;
+	 }
+	 .swiper-slide-active .first__desc-slider {
+		font-size: 16px;
+		top: 240px;
+	 }
+	 .first__title-slider {
+		font-size: 20px;
+		line-height: 35px;
+	 }
+	 .first__desc-slider {
+		font-size: 13px;
+		top: 150px;
+	 }
+}
+@media screen and (max-width: 1480px) {
+	.slide-gr {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 1250px) {
+	.navSlider-item {
+		width: 140px;
+	}
+	.nav__slider {
+		max-width: 920px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 410px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 700px;
+		max-height: 520px;
+	 
+	 }
+	 .swiper-slide-active .first__title-slider {
+		font-size: 26px;
+		line-height: 45px;
+		top: 50px;
+	 }
+	 .swiper-slide-active .first__desc-slider {
+		font-size: 14px;
+		top: 220px;
+	 }
+}
+@media screen and (max-width: 1160px) {
+	.grocery {
+		margin-top: 60px;
+	}
+	.grocery__title {
+		font-size: 25px;
+	}
+	.grocery__title img {
+		height: 30px;
+	}
+	.slide__grocery-item img {
+		height: auto;
+		max-height: 220px;
+	 }
+	 .slide__grocery-title {
+		font-size: 16px;
+	 }
+	.slide-gr {
+		height: 380px;
+	}
+	.info__slide {
+		padding: 0 10px;
+	}
+	.info__slide p {
+		font-size: 20px;
+	}
+	.slide__grocery-item {
+		width: 240px;
+		min-height: auto;
+		margin: 0 5px 20px 5px;
+	}
+	.navSlider-item {
+		width: 100px;
+	}
+	.nav__slider {
+		max-width: 680px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 360px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 600px;
+		max-height: 470px;
+	 
+	 }
+	 .first__slider-slide img {
+		max-width: 450px;
+		max-height: 400px ;
+		 
+	 }
+	 .first__title-slider {
+		font-size: 16px;
+		line-height: 30px;
+	 }
+	 .first__desc-slider {
+		font-size: 12px;
+ 
+	 }
+	 .buttonSlider {
+		left: 30px;
+	 }
+	 .next-button {
+		right: 30px !important;
+	 } 
+	 .swiper-slide-active .first__title-slider {
+		font-size: 23px;
+		line-height: 40px;
+		top: 40px;
+	 }
+	 .swiper-slide-active .first__desc-slider {
+		font-size: 13px;
+		top: 190px;
+	 }
+}
+@media screen and (max-width: 880px) {
+	.grocery {
+		margin-top: 30px;
+	}
+	.navSlider-item {
+		width: 80px;
+	}
+	.nav__slider {
+		max-width: 540px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 310px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 500px;
+		max-height: 430px;
+	 
+	 }
+	 .first__slider-slide img {
+		max-width: 350px;
+		max-height: 380px ;
+		 
+	 }
+	 .swiper-slide-active .first__title-slider {
+		font-size: 20px;
+		line-height: 38px;
+		top: 20px;
+	 }
+	 
+	 .first__title-slider {
+		font-size: 13px;
+		line-height: 26px;
+	 }
+	 .first__desc-slider {
+		font-size: 10px;
+		top: 130px;
+	 }
+	 .buttonSlider svg{
+		height: 30px;
+		width: 30px;
+	 }
+	 .next-button svg{
+		height: 30px;
+		width: 30px;
+	 }
+}
+@media screen and (max-width: 760px) {
+	.slide__grocery-item {
+		width: 200px;
+	}
+	.slide__grocery-item img {
+		max-height: 180px;
+	}
+	.slide-gr {
+		height: 316px;
+	}
+	.info__slide button {
+		font-size: 10px;
+		padding: 7px;
+		height: 35px;
+	}
+	.info__slide button svg {
+		margin-right: 5px;
+		height: 15px;
+		width: 15px;
+	}
+	.slide__grocery-title {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.info__slide p {
+		margin-bottom: 20px;
+		margin-top: 0;
+		font-size: 14px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 250px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 420px;
+		max-height: 400px;
+	 
+	 }
+	 .first__slider-slide img {
+		max-width: 300px;
+		max-height: 300px ;
+		 
+	 }
+	 .swiper-slide-active .first__title-slider {
+		font-size: 20px;
+		line-height: 34px;
+		left: 30px;
+		top: 10px;
+	 }
+	 .swiper-slide-active .first__desc-slider {
+		left: 30px;
+		top: 130px;
+	 }
+	 .first__title-slider {
+		font-size: 13px;
+		line-height: 26px;
+		left: 20px;
+		top: 10px;
+	}
+	 .first__desc-slider {
+		font-size: 10px;
+		top: 130px;
+		left: 20px;
+		top: 100px;
+	 }
+} 
+@media screen and (max-width: 640px) {
+	.groceryTreeOne {
+		height: 200px;
+		top: 10px;
+	}
+	.groceryTreeTwo {
+		height: 300px;
+		top: 0;
+	}
+	.slide-gr {
+		height: 260px;
+	}
+	.grocery__button button {
+		font-size: 12px;
+	}
+	.grocery__title {
+		font-size: 20px;
+	}
+	.grocery__title img {
+		height: 23px;
+		margin-right: 4px;
+	}
+	.slide__grocery-item {
+		/* box-shadow: 0.1px; */
+		width: 170px ;
+	}
+	.slide__grocery-item img {
+		height: 140px;
+	}
+	.info__slide p {
+		font-size: 12px;
+	}
+	.info__slide button {
+		font-size: 7px;
+	}
+	.slide__grocery-title {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.navSlider-item {
+		width: 60px;
+	}
+	.nav__slider {
+		max-width: 400px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 210px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 360px;
+		max-height: 300px;
+	 
+	 }
+	 .first__slider-slide img {
+		max-width: 240px;
+		max-height: 200px ;
+		 
+	 }
+	 .swiper-slide-active .first__title-slider {
+		font-size: 16px;
+		line-height: 28px;
+ 
+		top: 10px;
+	 }
+	 .swiper-slide-active .first__desc-slider {
+ 
+		top: 130px;
+		font-size: 12px;
+	 }
+	 .first__title-slider {
+		font-size: 10px;
+		line-height: 20px;
+ 
+		top: 10px;
+	}
+	 .first__desc-slider {
+		font-size: 8px;
+		top: 80px;
+ 
+
+	 }
+}
+@media screen and (max-width: 530px) {
+ 
+	.buttonSlider svg{
+		height: 25px;
+		width: 25px;
+	 }
+	 .buttonSlider {
+		left: 0px;
+	 }
+	 .next-button {
+		right: 0 !important;
+	 }
+	 .next-button svg{
+		height: 25px;
+		width: 25px;
+	 }
+}
+@media screen and (max-width: 450px) {
+	.groceryTreeOne {
+		height: 140px;
+		top: 20px;
+	}
+	.groceryTreeTwo {
+		height: 230px;
+		top: 10px;
+	}
+	.navSlider-item {
+		width: 40px;
+	}
+	.nav__slider {
+		max-width: 280px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 180px;
+	 }
+	.swiper-slide-active .first__title-slider {
+		font-size: 14px;
+		line-height: 28px;
+		left: 15px;
+		top: 5px;
+	 }
+	 .swiper-slide-active .first__desc-slider {
+ 
+		top: 80px;
+		left: 15px;
+		font-size: 12px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 300px;
+		max-height: 300px;
+	 
+	 }
+	 .first__slider-slide img {
+		max-width: 230px;
+		max-height: 200px ;
+		 
+	 }
+}
+@media screen and (max-width: 370px) {
+	.slide__grocery-item {
+		width: 145px;
+	}
+	.slide__grocery-title {
+		font-size: 10px;
+		line-height: 17px;
+	}
+	.info__slide {
+		padding: 0 5px;
+	}
+	.fist_slider-target .swiper-wrapper {
+		min-height: 145px;
+	 }
+	.first__slider-slide.swiper-slide-active img{
+		max-width: 240px;
+		max-height: 240px;
+	 
+	 }
+	 .first__slider-slide img {
+		max-width: 200px;
+		max-height: 200px ;
+		 
+	 }
+	 .swiper-slide-active .first__title-slider {
+		font-size: 12px;
+		line-height: 20px;
+		 
+	 }
+	 .swiper-slide-active .first__desc-slider {
+ 
+		
+		
+		font-size: 10px;
+	 }
+	 .first__title-slider {
+		font-size: 10px;
+		line-height: 20px;
+		left: 10px;
+		top: 0px;
+	}
+	 .first__desc-slider {
+		font-size: 8px;
+		top: 60px;
+		left: 10px;
+ 
+
+	 }
+	 .slide-gr {
+		height: 256px;
+	}
 }
