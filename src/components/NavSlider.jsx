@@ -1,6 +1,6 @@
 const NavSlider = ({slider, index}) => {
 	 
-	console.log(index);
+ 
 	return (
 
 		<section className="nav__slider">
